@@ -1,5 +1,5 @@
 body {
-    font-family: fantasy, serif;
+    font-family: Times, sans-serif;
 }
 
 #masthead {
@@ -12,5 +12,9 @@ body {
 }
 
 h2 {
-  color: #444
+  color:black
+}
+
+body {
+  background-color:tan
 }
