@@ -1,4 +1,12 @@
-p {color: black}
-a {text-decoration:none}
-div {text-align:center}
-body {background-color:white}
+body {
+    font-family: fantasy, serif;
+}
+
+#masthead {
+  text-align: center;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 100px;
+}
