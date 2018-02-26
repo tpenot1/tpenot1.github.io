@@ -23,7 +23,7 @@ console.log(hasThumbnail2)
 console.log(project2Keywords)
 
 let project3Id = 3
-let project3Title = "Weather damage reports"
+let project3Title = "Weather damage reports map"
 let project3Url = "https://tpenot13.maps.arcgis.com/apps/GeoForm/index.html?appid=3b96612d2ec54f139521aa9baa544a0a"
 let hasThumbnail3 = true
 let project3Keywords = ['web gis','GEOG 4046','book assignment 3']
