@@ -1,5 +1,5 @@
 let projectId = 1
-let projectTitle = "Map 1"
+let projectTitle = "Map 1: Story Map of Arlington Virginia"
 let projectUrl = "file:///C:/Users/tpenot1/Documents/GitHub/tpenot1.github.io/Portfolio/index.html"
 let hasThumbnail = true
 let projectKeywords = ['web gis','GEOG 4046']
