@@ -33,3 +33,15 @@ console.log(project3Title)
 console.log(project3Url)
 console.log(hasThumbnail3)
 console.log(project3Keywords)
+
+let project5Id = 5
+let project5Title = "EBRP swamps and block group populations"
+let project5Url = "https://tpenot13.maps.arcgis.com/apps/webappviewer/index.html?id=48b6b57d4b8d430081396cab4b1443b1"
+let hasThumbnail5 = true
+let project5Keywords = ['web gis','GEOG 4046','book assignment 5']
+
+console.log(project5Id)
+console.log(project5Title)
+console.log(project5Url)
+console.log(hasThumbnail5)
+console.log(project5Keywords)
