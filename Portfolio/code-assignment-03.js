@@ -9,3 +9,15 @@ console.log(projectTitle)
 console.log(projectUrl)
 console.log(hasThumbnail)
 console.log(projectKeywords)
+
+let projectId = 2
+let projectTitle = "Real-time earthquakes map"
+let projectUrl = "http://www.arcgis.com/apps/View/index.html?appid=99f1593a2a3841d29dd76e070e34bed2"
+let hasThumbnail = true
+let projectKeywords = ['web gis','GEOG 4046','book assignment 2']
+
+console.log(projectId)
+console.log(projectTitle)
+console.log(projectUrl)
+console.log(hasThumbnail)
+console.log(projectKeywords)
