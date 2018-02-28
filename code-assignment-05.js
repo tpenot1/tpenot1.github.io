@@ -12,11 +12,12 @@ projects[1] = {
   id: 2,
   url: 'http://www.arcgis.com/apps/View/index.html?appid=99f1593a2a3841d29dd76e070e34bed2',
   title: "Real-time earthquakes map",
-  hasThumbnail: false,
+  hasThumbnail: true,
   keywords: ['real-time','earthquakes','book assignment 2']
 }
 
 for (let i = 0; i < projects.length; i++) {
-  if (projects[i].thumb)
+  if (projects[i].hasThumbnail) {
     console.log('ss-project-' + projects[i].id + '.png')
   }
+}
