@@ -1,4 +1,4 @@
-let projects = []
+let projects = [i]
 
 project[0] = {
   id: 1,
@@ -17,7 +17,7 @@ project[1]= {
 }
 
 for (let i = 0; i < projects.length; i++) {
-  console.log(' Index position ' + i + ' title: ' + projects[i].title)
+  let title = createTitle(i)
   if (projects[i].thumb === true) {
     console.log('images/book-assignment-' + projects[i].id + '.png')
   } else {
