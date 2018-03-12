@@ -17,10 +17,20 @@ project[1]= {
 }
 
 for (let i = 0; i < projects.length; i++) {
-  console.log(' Index position ' + i + ' title: ' + projects[i].title)
+  let title = createTitle(i)
+  console.log(title)
+  let imageSrc = createImageSrc(i)
+  console.log(imageSrc)
+}
+
+function createTitle (i) {
+  return projects[i].title
+}
+
+function createImageSrc (i) {
   if (projects[i].thumb === true) {
-    console.log('images/book-assignment-' + projects[i].id + '.png')
+    return 'images/book-assignment-' + projects[i].id + '.png'
   } else {
-    console.log('images/no-preview.png')
+    return 'images/no-preview.png'
   }
 }
