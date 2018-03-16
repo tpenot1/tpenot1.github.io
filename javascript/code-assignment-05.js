@@ -17,10 +17,6 @@ project[1]= {
 }
 
 for (let i = 0; i < projects.length; i++) {
-  let title = createTitle(i)
-  if (projects[i].thumb === true) {
-    console.log('images/book-assignment-' + projects[i].id + '.png')
-  } else {
-    console.log('images/no-preview.png')
-  }
+  if (projects[i].thumb)
+    console.log('book-assignment-' + projects[i].id + '.png')
 }
