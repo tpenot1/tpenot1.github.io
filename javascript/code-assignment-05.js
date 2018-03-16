@@ -18,5 +18,5 @@ project[1]= {
 
 for (let i = 0; i < projects.length; i++) {
   if (projects[i].thumb)
-    console.log('book-assignment-' + projects[i].id + '.png')
+    console.log('images/book-assignment-' + projects[i].id + '.png')
 }
