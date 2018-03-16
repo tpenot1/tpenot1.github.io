@@ -1,4 +1,4 @@
-let projects = [i]
+let project = []
 
 project[0] = {
   id: 1,
@@ -18,5 +18,5 @@ project[1]= {
 
 for (let i = 0; i < projects.length; i++) {
   if (projects[i].thumb)
-    console.log('images/book-assignment-' + projects[i].id + '.png')
+    console.log('ss-project-' + projects[i].id + '.png')
 }
