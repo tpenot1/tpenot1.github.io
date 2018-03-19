@@ -1,9 +1,9 @@
-let projects = []
+let projectData = []
 
 project[0] = {
   id: 1,
   url: 'https://www.arcgis.com/apps/MapTour/index.html?appid=58b54e7b9cfd45498d2c8ae68ee80dde',
-  title: 'Story Map of Arlington Virginia',
+  title: 'Story Map of Arlington, Virginia',
   hasThumbnail: true,
   keywords: ['story map','Arlington','Virginia','book assignment 1',]
 }
@@ -16,8 +16,11 @@ project[1]= {
   keywords: ['real-time','earthquakes','book assignment 2']
 }
 
-for (let i = 0; i < projects.length; i++) {
-  let title = createTitle(i)
-  console.log(title)
-  let imageSrc = createImageSrc(i)
-  console.log(imageSrc)
+for (let i = 0; i < projectData.length; i++) {
+  console.log(' Index position ' + i + ' Story Map of Arlington, Virginia ' + project[i].title)
+  if (projectData[i].thumb === true) {
+    console.log('images/book-assignment-' + projectData[i].id + '.png')
+  } else {
+    console.log('images/no-preview.png')
+  }
+}
