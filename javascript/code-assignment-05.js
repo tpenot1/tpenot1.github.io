@@ -1,4 +1,4 @@
-let project = []
+let projects = []
 
 project[0] = {
   id: 1,
