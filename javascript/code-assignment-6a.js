@@ -21,19 +21,13 @@ for (let i = 0; i < projects.length; i++) {
     console.log('book-assignment-' + projects[i].id + '.png')
 }
 
-function describeFruit (fruit) {
-  let myfavfruit = 'apple'
-  let description = describeFruit(myfavfruit)
-  console.log(description)
-}
-
 function createTitle (i) {
   return projects[i].title
 }
 
 function createImageSrc (i) {
   if (projects[i].thumb === true) {
-    return 'images/book-assignment-' + projects[i].id + '.png'
+    return 'images/ss-project-' + projects[i].id + '.png'
   } else {
     return 'images/no-preview.png'
   }
