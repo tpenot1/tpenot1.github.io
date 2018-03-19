@@ -1,4 +1,4 @@
-let projectData = []
+let project = []
 
 project[0] = {
   id: 1,
@@ -16,11 +16,7 @@ project[1]= {
   keywords: ['real-time','earthquakes','book assignment 2']
 }
 
-for (let i = 0; i < projectData.length; i++) {
-  console.log(' Index position ' + i + ' Story Map of Arlington, Virginia ' + project[i].title)
-  if (projectData[i].thumb === true) {
-    console.log('images/book-assignment-' + projectData[i].id + '.png')
-  } else {
-    console.log('images/no-preview.png')
-  }
+for (let i = 0; i < projects.length; i++) {
+  if (projects[i].thumb)
+    console.log('ss-project-' + projects[i].id + '.png')
 }
