@@ -16,8 +16,14 @@ let stateStyle = function (state) {
   }
   return formatting
 }
+let createPopup = function (state, layer) {
+  let name = state.properties.STATE_NAME
+  let age = state.properties.MED_AGE
+  layer.bindPopup('Median age of ' + name + ': ' + age + '<br>National average: 38')
+}
 
 let stateOptions = {
-  style: stateStyle
+  style: stateStyle,
+  onEachFeature: createPopup
 }
 L.geoJSON(stateDemographics, stateOptions).addTo(statemap)
