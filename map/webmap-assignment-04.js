@@ -7,7 +7,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_M
 function myStyle (feature) {
   let age = feature.properties.AGE_20_24
   let color = 'Blue'
-  if (age > 250000) {
+  if (age > 300000) {
     color = 'Red'
   }
 let myStyle = {
@@ -20,7 +20,7 @@ let myStyle = {
 function myPopup (feature, layer) {
   let name = feature.properties.STATE_NAME
   let age = feature.properties.AGE_20_24
-  layer.bindPopup('Age 20-24 ' + name + ': ' + age + '<br>National total: 54419')
+  layer.bindPopup('Age 20-24 ' + name + ': ' + age + '<br>National average: 200000')
 }
 let myOptions = {
   style: myStyle,
