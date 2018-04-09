@@ -3,9 +3,9 @@ let mymap = L.map('webmap3').setView([30.411701, -91.184524], 12)
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}').addTo(mymap)
 
 let myGreenIcon = L.icon({
-  iconUrl: 'map/leaf-green.png',
-  shadowUrl: 'map/leaf-shadow.png',
-  iconSize: [38, 95],
+  iconUrl: 'leaf-green.png',
+  shadowUrl: 'leaf-shadow.png',
+  iconSize: [25, 70],
   shadowSize: [50, 64],
   iconAnchor: [22, 94],
   shadowAnchor: [4, 62],
@@ -27,8 +27,8 @@ let polygonStyle = {
 
 let polygon = L.polygon(polygonCorners, polygonStyle).addTo(mymap)
 
-polygon.bindPopup('Baton Rouge, LA - Louisiana State University')
-marker.bindPopup('LSU and surrounding roads - River Rd. to Highland Rd. to Brightside Ln.')
+polygon.bindPopup('LSU surrounding roads - Highland Rd., River Road, & Brightside Dr.')
+marker.bindPopup('Baton Rouge, LA - Louisiana State University')
 
 mymap.on('click', function (event) {
   console.log('You clicked the map at ' + event.latlng)
