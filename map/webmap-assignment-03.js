@@ -1,10 +1,12 @@
+function map3 () {
+
 let mymap = L.map('webmap3').setView([30.411701, -91.184524], 12)
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}').addTo(mymap)
 
 let greenIcon = L.icon({
-  iconUrl: 'images/leaf-green.png',
-  shadowUrl: 'images/leaf-green.png',
+  iconUrl: 'map/leaf-green.png',
+  shadowUrl: 'map/leaf-green.png',
   iconSize: [38, 95],
   shadowSize: [50, 64],
   iconAnchor: [22, 94],
@@ -33,3 +35,5 @@ marker.bindPopup('LSU and surrounding roads - River Rd. to Highland Rd. to Brigh
 mymap.on('click', function (event) {
   console.log('You clicked the map at ' + event.latlng)
   })
+}
+map3 ()
