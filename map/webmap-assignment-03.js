@@ -6,7 +6,7 @@ let pick = L.icon({
   iconUrl: 'map/leaf-green.png',
   iconSize: [43, 50],
   iconAnchor: [43, 50],
-  popupAnchor: [30.411701, -91.184524]
+  popupAnchor: [-22, -27]
 })
 
 let marker = L.marker([30.411701, -91.184524], { icon: pick }).addTo(mymap)
