@@ -5,9 +5,9 @@ mymap.on('click', function (event) {
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}').addTo(mymap)
 function myStyle (feature) {
-  let age = state.properties.AGE_20_24
+  let age = feature.properties.AGE_20_24
   let color = 'Blue'
-  if (age > 24) {
+  if (age > 250000) {
     color = 'Red'
   }
 let myStyle = {
