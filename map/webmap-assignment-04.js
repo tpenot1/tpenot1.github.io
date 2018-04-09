@@ -26,4 +26,4 @@ let myOptions = {
   style: myStyle,
   onEachFeature: myPopup
 }
-L.geoJSON(stateDemographics, stateOptions).addTo(statemap)
+L.geoJSON(stateDemographics, myOptions).addTo(mymap)
