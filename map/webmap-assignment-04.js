@@ -20,7 +20,7 @@ let myStyle = {
 function myPopup (feature, layer) {
   let name = feature.properties.STATE_NAME
   let age = feature.properties.AGE_20_24
-  layer.bindPopup('Age 20-24 ' + name + ': ' + age + '<br>National average: 200000')
+  layer.bindPopup('People aged 20-24 ' + name + ': ' + age + '<br>National average: 200000')
 }
 let myOptions = {
   style: myStyle,
