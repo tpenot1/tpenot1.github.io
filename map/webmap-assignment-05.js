@@ -18,7 +18,7 @@ L.control.layers(myBasemaps).addTo(mymap)
 function myStyle (feature) {
   let age = feature.properties.AGE_20_24
   let color = 'Blue'
-  if (age > 300000) {
+  if (age > 335322) {
     color = 'Red'
   }
 let myStyle = {
@@ -31,7 +31,7 @@ let myStyle = {
 function myPopup (feature, layer) {
   let name = feature.properties.STATE_NAME
   let age = feature.properties.AGE_20_24
-  layer.bindPopup('People aged 20-24 ' + name + ': ' + age + '<br>National average: 200000')
+  layer.bindPopup('People aged 20-24 ' + name + ': ' + age + '<br>National average: 335322')
 }
 let myOptions = {
   style: myStyle,
