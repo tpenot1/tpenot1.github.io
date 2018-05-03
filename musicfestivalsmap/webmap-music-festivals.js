@@ -12,7 +12,14 @@ let myBasemaps = {
 
 L.control.layers(myBasemaps).addTo(mymusicmap)
 
-let place = L.marker([35.471086, -86.050562]).addTo(mymusicmap)
+let myGreenIcon = L.icon({
+  iconUrl: 'roo-image.png',
+  iconSize: [35, 35],
+  iconAnchor: [0, 0],
+  popupAnchor: [0, 0]
+})
+
+let place = L.marker([35.471086, -86.050562], { icon: myGreenIcon }).addTo(mymusicmap)
 
 let polygon = L.polygon([
   [35.468729, -86.054541],
@@ -22,7 +29,14 @@ let polygon = L.polygon([
 
 place.bindPopup('Bonnaroo Music and Arts Festival, Manchester, Tennessee')
 
-let place2 = L.marker([39.198602, -75.524604]).addTo(mymusicmap)
+let myBlueIcon = L.icon({
+  iconUrl: 'firefly1-image.png',
+  iconSize: [35, 35],
+  iconAnchor: [10, 10],
+  popupAnchor: [0, 0]
+})
+
+let place2 = L.marker([39.198602, -75.524604], { icon: myBlueIcon }).addTo(mymusicmap)
 
 let polygon2 = L.polygon([
   [39.197255, -75.529196],
@@ -32,7 +46,14 @@ let polygon2 = L.polygon([
 
 place2.bindPopup('Firefly Music Festival, Dover, Delaware')
 
-let place3 = L.marker([30.267374, -97.768031]).addTo(mymusicmap)
+let myRedIcon = L.icon({
+  iconUrl: 'acl3-image.png',
+  iconSize: [35, 35],
+  iconAnchor: [10, 10],
+  popupAnchor: [0, 0]
+})
+
+let place3 = L.marker([30.267374, -97.768031], { icon: myRedIcon }).addTo(mymusicmap)
 
 let polygon3 = L.polygon([
   [30.265891, -97.771915],
@@ -42,7 +63,14 @@ let polygon3 = L.polygon([
 
 place3.bindPopup('Austin City Limits Music Festival, Austin, Texas')
 
-let place4 = L.marker([30.248559, -87.689735]).addTo(mymusicmap)
+let myPurpleIcon = L.icon({
+  iconUrl: 'hangout1-image.png',
+  iconSize: [35, 35],
+  iconAnchor: [3, 0],
+  popupAnchor: [0, 0]
+})
+
+let place4 = L.marker([30.248559, -87.689735], { icon: myPurpleIcon }).addTo(mymusicmap)
 
 let polygon4 = L.polygon([
   [30.246909, -87.688909],
@@ -52,7 +80,14 @@ let polygon4 = L.polygon([
 
 place4.bindPopup('Hangout Music Festival, Gulfshores, Alabama')
 
-let place5 = L.marker([29.989736, -90.090748]).addTo(mymusicmap)
+let myBlackIcon = L.icon({
+  iconUrl: 'voodoo-image.png',
+  iconSize: [35, 35],
+  iconAnchor: [15, 12],
+  popupAnchor: [0, 0]
+})
+
+let place5 = L.marker([29.989736, -90.090748], { icon: myBlackIcon }).addTo(mymusicmap)
 
 let polygon5 = L.polygon([
   [29.988045, -90.089117],
